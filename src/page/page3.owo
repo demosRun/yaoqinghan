@@ -1,0 +1,50 @@
+<template lang="pug">
+.page3
+  img.so.so-0(src="@|156.png|")
+  img.so.so-1(src="@|158.png|")
+  img.so.so-2(src="@|157.png|")
+  img.so.so-3(src="@|127.png|" o-animation="floatUpDown")
+</template>
+<script>
+module.exports = {
+  created: function () {
+    owo.tool.touch({
+      el: this.$el,
+      end: function (e) {
+        if (e.swipe[1] < -100) {
+          owo.go('page4//moveToLeft/scaleUp/true/moveToRight/scaleUp')
+        } else if (e.swipe[1] > 100) {
+          owo.go('page2//moveToRight/scaleUp/true/moveToLeft/scaleUp')
+        }
+      }
+    })
+    owo.animate('fadeIn', this.query('.so-2'), 600)
+  }
+}
+</script>
+<style lang="less">
+.page3 {
+  background-image: url('@|126.jpg|');
+}
+
+.so-0 {
+  left: 227px;
+  top: 282px;
+  z-index: 3;
+}
+.so-1 {
+  left: 49px;
+  top: 384px;
+  z-index: 2;
+}
+.so-2 {
+  left: 78px;
+  top: 406px;
+  z-index: 4;
+}
+.so-3 {
+  left: 355px;
+  top: 1252px;
+  z-index: 0;
+}
+</style>

@@ -1,0 +1,103 @@
+<template lang="pug">
+.page5
+  img.so.so-0(src="@|290.png|")
+  img.so.so-1(src="@|294.png|")
+  img.so.so-2(src="@|293.png|")
+  img.so.so-box(src="@|158.png|")
+  //- 输入框
+  input.so.so-input-0(type="text")
+  input.so.so-input-1(type="text")
+  input.so.so-input-2(type="text")
+  input.so.so-input-3(type="text")
+
+</template>
+<script>
+module.exports = {
+  created: function () {
+    owo.tool.touch({
+      el: this.$el,
+      end: function (e) {
+        if (e.swipe[1] < -100) {
+          owo.tool.toast('已经是第后了!')
+        } else if (e.swipe[1] > 100) {
+          owo.go('page4//moveToRight/scaleUp/true/moveToLeft/scaleUp')
+        }
+      }
+    })
+  }
+}
+</script>
+<style lang="less">
+.page5 {
+  background-image: url('@|126.jpg|');
+}
+.so-box {
+  left: 49px;
+  top: 384px;
+  z-index: 0;
+}
+.so-0 {
+  left: 227px;
+  top: 282px;
+  z-index: 2;
+}
+.so-1 {
+  left: 99px;
+  top: 823px;
+  z-index: 1;
+}
+.so-2 {
+  left: 100px;
+  top: 917px;
+  z-index: 2;
+}
+.so-input-0 {
+  left: 99px;
+  top: 448px;
+  width: 450px;
+  height: 75px;
+  z-index: 3;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 31px;
+  background-image: url('@|298.png|');
+}
+.so-input-1 {
+  left: 99px;
+  top: 542px;
+  width: 450px;
+  height: 75px;
+  z-index: 2;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 31px;
+  background-image: url('@|297.png|');
+}
+.so-input-2 {
+  left: 99px;
+  top: 636px;
+  width: 450px;
+  height: 75px;
+  z-index: 1;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 31px;
+  background-image: url('@|296.png|');
+}
+.so-input-3 {
+  left: 99px;
+  top: 730px;
+  width: 450px;
+  height: 75px;
+  z-index: 0;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 31px;
+  background-image: url('@|295.png|');
+}
+input.so {
+  background-color: transparent;
+  padding-left: 100px;
+  color: white;
+}
+</style>

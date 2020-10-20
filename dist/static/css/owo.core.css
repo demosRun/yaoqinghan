@@ -1,0 +1,386 @@
+body, html, .page, .page-box {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+.owo-animation {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.owo-animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owo-animation-forward {
+  z-index: 99;
+}
+
+img {
+  border: none;
+}
+
+[route-active="false"] {
+  display: none;
+}
+
+/* 清除浮动 */
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+
+[o-animation="floatUpDown"] {
+  -webkit-animation: floatUpDown 3s linear infinite;
+  animation: floatUpDown 3s linear infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes floatUpDown {
+  0% { transform: translateY(-4vh);}
+  50% {transform: translateY(-8vh);}
+  100% {transform: translateY(-4vh);}
+}
+
+@-webkit-keyframes float {
+  0% { transform: translateY(-4vh);}
+  50% {transform: translateY(-8vh);}
+  100% {transform: translateY(-4vh);}
+}
+
+@keyframes float {
+  0% { transform: translateY(-4vh);}
+  50% {transform: translateY(-8vh);}
+  100% {transform: translateY(-4vh);}
+}
+
+.page-1 {
+  background-image: url('../resource/126.jpg');
+}
+
+.page-1 .so-0 {
+  left: 285px;
+  top: 245px;
+  z-index: 4;
+}
+
+.page-1 .so-1 {
+  left: 36px;
+  top: 350px;
+  z-index: 3;
+}
+
+.page-1 .so-2 {
+  left: 160px;
+  top: 500px;
+  z-index: 2;
+}
+
+.page-1 .so-3 {
+  left: 355px;
+  top: 1044px;
+  z-index: 1;
+}
+
+.page-1 .so-4 {
+  left: 233px;
+  top: 1139px;
+  z-index: 0;
+}
+.page2 {
+  background-image: url('../resource/126.jpg');
+}
+
+.page2 .so-0 {
+  left: 227px;
+  top: 282px;
+  z-index: 2;
+}
+
+.page2 .so-1 {
+  left: 85px;
+  top: 411px;
+  z-index: 1;
+}
+
+.page2 .so-2 {
+  left: 355px;
+  top: 1204px;
+  z-index: 0;
+}
+
+.page2 .text {
+  color: white;
+  position: absolute;
+  top: 435px;
+  z-index: 9;
+  font-size: 26px;
+  line-height: 38px;
+  width: 68%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 640px;
+  text-indent: 2em;
+  overflow: auto;
+}
+.page3 {
+  background-image: url('../resource/126.jpg');
+}
+
+.page3 .so-0 {
+  left: 227px;
+  top: 282px;
+  z-index: 3;
+}
+
+.page3 .so-1 {
+  left: 49px;
+  top: 384px;
+  z-index: 2;
+}
+
+.page3 .so-2 {
+  left: 78px;
+  top: 406px;
+  z-index: 4;
+}
+
+.page3 .so-3 {
+  left: 355px;
+  top: 1252px;
+  z-index: 0;
+}
+.page4 {
+  background-image: url('../resource/126.jpg');
+}
+
+.page4 .so-0 {
+  left: 227px;
+  top: 282px;
+  z-index: 3;
+}
+
+.page4 .so-1 {
+  left: 49px;
+  top: 384px;
+  z-index: 2;
+}
+
+.page4 .so-2 {
+  left: 78px;
+  top: 450px;
+  z-index: 4;
+}
+
+.page4 .so-3 {
+  left: 355px;
+  top: 1252px;
+  z-index: 0;
+}
+.page5 {
+  background-image: url('../resource/126.jpg');
+}
+
+.page5 .so-box {
+  left: 49px;
+  top: 384px;
+  z-index: 0;
+}
+
+.page5 .so-0 {
+  left: 227px;
+  top: 282px;
+  z-index: 2;
+}
+
+.page5 .so-1 {
+  left: 99px;
+  top: 823px;
+  z-index: 1;
+}
+
+.page5 .so-2 {
+  left: 100px;
+  top: 917px;
+  z-index: 2;
+}
+
+.page5 .so-input-0 {
+  left: 99px;
+  top: 448px;
+  width: 450px;
+  height: 75px;
+  z-index: 3;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 31px;
+  background-image: url('../resource/298.png');
+}
+
+.page5 .so-input-1 {
+  left: 99px;
+  top: 542px;
+  width: 450px;
+  height: 75px;
+  z-index: 2;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 31px;
+  background-image: url('../resource/297.png');
+}
+
+.page5 .so-input-2 {
+  left: 99px;
+  top: 636px;
+  width: 450px;
+  height: 75px;
+  z-index: 1;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 31px;
+  background-image: url('../resource/296.png');
+}
+
+.page5 .so-input-3 {
+  left: 99px;
+  top: 730px;
+  width: 450px;
+  height: 75px;
+  z-index: 0;
+  background-repeat: no-repeat;
+  border: none;
+  font-size: 31px;
+  background-image: url('../resource/295.png');
+}
+
+.page5 input.so {
+  background-color: transparent;
+  padding-left: 100px;
+  color: white;
+}
+/* 页面切换动画 */
+.o-page-moveToLeft {
+	-webkit-animation: moveToLeft .6s ease both;
+	-moz-animation: moveToLeft .6s ease both;
+	animation: moveToLeft .6s ease both;
+}
+
+@-webkit-keyframes moveToLeft {
+	to { -webkit-transform: translateX(-100%); }
+}
+@-moz-keyframes moveToLeft {
+	to { -moz-transform: translateX(-100%); }
+}
+@keyframes moveToLeft {
+	to { transform: translateX(-100%); }
+}
+.o-page-scaleUp {
+	-webkit-animation: scaleUp .7s ease both;
+	-moz-animation: scaleUp .7s ease both;
+	animation: scaleUp .7s ease both;
+}
+
+@-webkit-keyframes scaleUp {
+	from { opacity: 0; -webkit-transform: scale(.8); }
+}
+@-moz-keyframes scaleUp {
+	from { opacity: 0; -moz-transform: scale(.8); }
+}
+@keyframes scaleUp {
+	from { opacity: 0; transform: scale(.8); }
+}
+.o-page-moveToRight {
+	-webkit-animation: moveToRight .6s ease both;
+	-moz-animation: moveToRight .6s ease both;
+	animation: moveToRight .6s ease both;
+}
+
+@-webkit-keyframes moveToRight { 
+	to { -webkit-transform: translateX(100%); }
+}
+@-moz-keyframes moveToRight { 
+	to { -moz-transform: translateX(100%); }
+}
+@keyframes moveToRight { 
+	to { transform: translateX(100%); }
+}
+
+/* 动画效果 */
+@keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInRight {
+  animation-name: bounceInRight;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+

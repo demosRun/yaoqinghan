@@ -1,0 +1,61 @@
+<template lang="pug">
+.page2
+  img.so.so-0(src="@|147.png|")
+  img.so.so-1(src="@|148.png|")
+  img.so.so-2(src="@|127.png|" o-animation="floatUpDown")
+  .text
+    p 为推进疫情防控和经济社会发展工作，坚持以人民健康为中心，落实《“健康中国2030”规划纲要》，提高人民健康水平，推动企业经营健康可持续发展，顺应人民群众对美好生活的向往，不断增强人民群众的获得感、幸福感、安全感。人民网发挥中央媒体社会责任意识，将于2019年10月18日在北京人民日报社报告厅举办“2020人民职场健康管理论坛”。
+    p 届时将邀请相关主管单位负责人、权威专家学者、企业负责人等各界人士共同探讨“建设幸福企业”等话题，分享职场健康管理经验，公布“2020人民职场健康管理创新案例”，发布《2020职场健康管理报告》。人民网诚挚邀请贵公司领导或相关负责人出席。
+</template>
+<script>
+module.exports = {
+  created: function () {
+    owo.tool.touch({
+      el: this.$el,
+      end: function (e) {
+        if (e.swipe[1] < -100) {
+          owo.go('page3//moveToLeft/scaleUp/true/moveToRight/scaleUp')
+        } else if (e.swipe[1] > 100) {
+          owo.go('page1//moveToRight/scaleUp/true/moveToLeft/scaleUp')
+        }
+      }
+    })
+    owo.animate('fadeIn', this.query('.text'), 600)
+  }
+}
+</script>
+<style lang="less">
+.page2 {
+  background-image: url('@|126.jpg|');
+}
+.so-0 {
+  left: 227px;
+  top: 282px;
+  z-index: 2;
+}
+.so-1 {
+  left: 85px;
+  top: 411px;
+  z-index: 1;
+}
+.so-2 {
+  left: 355px;
+  top: 1204px;
+  z-index: 0;
+}
+.text {
+  color: white;
+  position: absolute;
+  top: 435px;
+  z-index: 9;
+  font-size: 26px;
+  line-height: 38px;
+  width: 68%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 640px;
+  text-indent: 2em;
+  overflow: auto;
+}
+</style>

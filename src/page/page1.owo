@@ -1,17 +1,59 @@
 <template lang="pug">
 .page-1
-  
+  img.so.so-0(src="@|120.png|")
+  img.so.so-1(src="@|122.png|")
+  img.so.so-2(src="@|121.png|")
+  img.so.so-3(src="@|127.png|" o-animation="floatUpDown")
+  img.so.so-4(src="@|123.png|")
 </template>
 
 <script>
   module.exports = {
     created: function () {
-
+      owo.tool.toast('向上滑动下一页!')
+      owo.tool.touch({
+        el: this.$el,
+        end: function (e) {
+          if (e.swipe[1] < -100) {
+            owo.go('page2//moveToLeft/scaleUp/true/moveToRight/scaleUp')
+          } else if (e.swipe[1] > 100) {
+            owo.tool.toast('已经是第一页了!')
+          }
+        }
+      })
+      owo.animate('bounceInRight', this.query('.so-2'), 600)
     }
   }
 </script>
 
 
 <style lang="less">
-
+.page-1 {
+  background-image: url('@|126.jpg|');
+}
+.so-0 {
+  left: 285px;
+  top: 245px;
+  z-index: 4;
+}
+.so-1 {
+  left: 36px;
+  top: 350px;
+  z-index: 3;
+}
+.so-2 {
+  left: 160px;
+  top: 500px;
+  z-index: 2;
+}
+.so-3 {
+  left: 355px;
+  top: 1044px;
+  z-index: 1;
+}
+.so-4 {
+  left: 233px;
+  top: 1139px;
+  z-index: 0;
+}
 </style>
