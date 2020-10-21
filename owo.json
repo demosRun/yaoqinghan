@@ -79,7 +79,7 @@
 		},
 		{
 			"name": "autoScale",
-			"src": "https://cunchu.site/owo/plug/autoScale.js"
+			"src": "./owo_modules/autoScale.js"
 		},
 		{
 			"name": "main",

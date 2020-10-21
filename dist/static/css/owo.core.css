@@ -120,19 +120,19 @@ li {
 
 .page2 .so-0 {
   left: 227px;
-  top: 282px;
+  top: 272px;
   z-index: 2;
 }
 
 .page2 .so-1 {
   left: 85px;
-  top: 411px;
+  top: 401px;
   z-index: 1;
 }
 
 .page2 .so-2 {
   left: 355px;
-  top: 1204px;
+  top: 1194px;
   z-index: 0;
 }
 
@@ -157,25 +157,25 @@ li {
 
 .page3 .so-0 {
   left: 227px;
-  top: 282px;
+  top: 262px;
   z-index: 3;
 }
 
 .page3 .so-1 {
   left: 49px;
-  top: 384px;
+  top: 364px;
   z-index: 2;
 }
 
 .page3 .so-2 {
   left: 78px;
-  top: 406px;
+  top: 386px;
   z-index: 4;
 }
 
 .page3 .so-3 {
   left: 355px;
-  top: 1252px;
+  top: 1232px;
   z-index: 0;
 }
 .page4 {
@@ -184,25 +184,25 @@ li {
 
 .page4 .so-0 {
   left: 227px;
-  top: 282px;
+  top: 262px;
   z-index: 3;
 }
 
 .page4 .so-1 {
   left: 49px;
-  top: 384px;
+  top: 364px;
   z-index: 2;
 }
 
 .page4 .so-2 {
   left: 78px;
-  top: 450px;
+  top: 430px;
   z-index: 4;
 }
 
 .page4 .so-3 {
   left: 355px;
-  top: 1252px;
+  top: 1232px;
   z-index: 0;
 }
 .page5 {
@@ -211,31 +211,31 @@ li {
 
 .page5 .so-box {
   left: 49px;
-  top: 384px;
+  top: 364px;
   z-index: 0;
 }
 
 .page5 .so-0 {
   left: 227px;
-  top: 282px;
+  top: 262px;
   z-index: 2;
 }
 
 .page5 .so-1 {
   left: 99px;
-  top: 823px;
+  top: 803px;
   z-index: 1;
 }
 
 .page5 .so-2 {
   left: 100px;
-  top: 917px;
+  top: 897px;
   z-index: 2;
 }
 
 .page5 .so-input-0 {
   left: 99px;
-  top: 448px;
+  top: 428px;
   width: 450px;
   height: 75px;
   z-index: 3;
@@ -247,7 +247,7 @@ li {
 
 .page5 .so-input-1 {
   left: 99px;
-  top: 542px;
+  top: 522px;
   width: 450px;
   height: 75px;
   z-index: 2;
@@ -259,7 +259,7 @@ li {
 
 .page5 .so-input-2 {
   left: 99px;
-  top: 636px;
+  top: 616px;
   width: 450px;
   height: 75px;
   z-index: 1;
@@ -271,7 +271,7 @@ li {
 
 .page5 .so-input-3 {
   left: 99px;
-  top: 730px;
+  top: 710px;
   width: 450px;
   height: 75px;
   z-index: 0;
@@ -292,58 +292,71 @@ li {
   left: 0px;
   right: 0px;
   width: 530px;
-  top: 460px;
+  top: 440px;
   margin: 0 auto;
   color: white;
   font-size: 36px;
   line-height: 80px;
-  text-align: center;
 }
 /* 页面切换动画 */
-.o-page-moveToLeft {
-	-webkit-animation: moveToLeft .6s ease both;
-	-moz-animation: moveToLeft .6s ease both;
-	animation: moveToLeft .6s ease both;
+.o-page-moveToTop {
+	-webkit-animation: moveToTop .6s ease both;
+	-moz-animation: moveToTop .6s ease both;
+	animation: moveToTop .6s ease both;
 }
 
-@-webkit-keyframes moveToLeft {
-	to { -webkit-transform: translateX(-100%); }
+@-webkit-keyframes moveToTop {
+	to { -webkit-transform: translateY(-100%); }
 }
-@-moz-keyframes moveToLeft {
-	to { -moz-transform: translateX(-100%); }
+@-moz-keyframes moveToTop {
+	to { -moz-transform: translateY(-100%); }
 }
-@keyframes moveToLeft {
-	to { transform: translateX(-100%); }
+@keyframes moveToTop {
+	to { transform: translateY(-100%); }
 }
-.o-page-scaleUp {
-	-webkit-animation: scaleUp .7s ease both;
-	-moz-animation: scaleUp .7s ease both;
-	animation: scaleUp .7s ease both;
+.o-page-moveFromBottom {
+	-webkit-animation: moveFromBottom .6s ease both;
+	-moz-animation: moveFromBottom .6s ease both;
+	animation: moveFromBottom .6s ease both;
+}
+@-webkit-keyframes moveFromBottom {
+	from { -webkit-transform: translateY(100%); }
+}
+@-moz-keyframes moveFromBottom {
+	from { -moz-transform: translateY(100%); }
+}
+@keyframes moveFromBottom {
+	from { transform: translateY(100%); }
+}
+.o-page-moveToBottom {
+	-webkit-animation: moveToBottom .6s ease both;
+	-moz-animation: moveToBottom .6s ease both;
+	animation: moveToBottom .6s ease both;
 }
 
-@-webkit-keyframes scaleUp {
-	from { opacity: 0; -webkit-transform: scale(.8); }
+@-webkit-keyframes moveToBottom {
+	to { -webkit-transform: translateY(100%); }
 }
-@-moz-keyframes scaleUp {
-	from { opacity: 0; -moz-transform: scale(.8); }
+@-moz-keyframes moveToBottom {
+	to { -moz-transform: translateY(100%); }
 }
-@keyframes scaleUp {
-	from { opacity: 0; transform: scale(.8); }
+@keyframes moveToBottom {
+	to { transform: translateY(100%); }
 }
-.o-page-moveToRight {
-	-webkit-animation: moveToRight .6s ease both;
-	-moz-animation: moveToRight .6s ease both;
-	animation: moveToRight .6s ease both;
+.o-page-moveFromTop {
+	-webkit-animation: moveFromTop .6s ease both;
+	-moz-animation: moveFromTop .6s ease both;
+	animation: moveFromTop .6s ease both;
 }
 
-@-webkit-keyframes moveToRight { 
-	to { -webkit-transform: translateX(100%); }
+@-webkit-keyframes moveFromTop {
+	from { -webkit-transform: translateY(-100%); }
 }
-@-moz-keyframes moveToRight { 
-	to { -moz-transform: translateX(100%); }
+@-moz-keyframes moveFromTop {
+	from { -moz-transform: translateY(-100%); }
 }
-@keyframes moveToRight { 
-	to { transform: translateX(100%); }
+@keyframes moveFromTop {
+	from { transform: translateY(-100%); }
 }
 
 /* 动画效果 */

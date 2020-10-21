@@ -12,9 +12,9 @@ module.exports = {
       el: this.$el,
       end: function (e) {
         if (e.swipe[1] < -100) {
-          owo.go('page5//moveToLeft/scaleUp/true/moveToRight/scaleUp')
+          owo.go('page5//moveToTop/moveFromBottom/true/moveToBottom/moveFromTop')
         } else if (e.swipe[1] > 100) {
-          owo.go('page3//moveToRight/scaleUp/true/moveToLeft/scaleUp')
+          owo.go('page3//moveToBottom/moveFromTop/true/moveToTop/moveFromBottom')
         }
       }
     })
@@ -29,22 +29,22 @@ module.exports = {
 
 .so-0 {
   left: 227px;
-  top: 282px;
+  top: 262px;
   z-index: 3;
 }
 .so-1 {
   left: 49px;
-  top: 384px;
+  top: 364px;
   z-index: 2;
 }
 .so-2 {
   left: 78px;
-  top: 450px;
+  top: 430px;
   z-index: 4;
 }
 .so-3 {
   left: 355px;
-  top: 1252px;
+  top: 1232px;
   z-index: 0;
 }
 </style>

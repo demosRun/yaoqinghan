@@ -10,10 +10,11 @@
   //- input.so.so-input-2(type="text")
   //- input.so.so-input-3(type="text")
   .text
+    p(style="margin-bottom: 30px;color: #ffffff;font-weight: bold;") 报名咨询请联系会务人员或发邮件确认
     p 联系人：赵老师
-    p 电话 65935897 15313522896
-    p 邮箱 beijing@people.cn
-
+    p 电话： 65935897 15313522896
+    p 邮箱： beijing@people.cn
+    
 </template>
 <script>
 module.exports = {
@@ -24,7 +25,7 @@ module.exports = {
         if (e.swipe[1] < -100) {
           owo.tool.toast('已经是第后了!')
         } else if (e.swipe[1] > 100) {
-          owo.go('page4//moveToRight/scaleUp/true/moveToLeft/scaleUp')
+          owo.go('page4//moveToBottom/moveFromTop/true/moveToTop/moveFromBottom')
         }
       }
     })
@@ -37,27 +38,27 @@ module.exports = {
 }
 .so-box {
   left: 49px;
-  top: 384px;
+  top: 364px;
   z-index: 0;
 }
 .so-0 {
   left: 227px;
-  top: 282px;
+  top: 262px;
   z-index: 2;
 }
 .so-1 {
   left: 99px;
-  top: 823px;
+  top: 803px;
   z-index: 1;
 }
 .so-2 {
   left: 100px;
-  top: 917px;
+  top: 897px;
   z-index: 2;
 }
 .so-input-0 {
   left: 99px;
-  top: 448px;
+  top: 428px;
   width: 450px;
   height: 75px;
   z-index: 3;
@@ -68,7 +69,7 @@ module.exports = {
 }
 .so-input-1 {
   left: 99px;
-  top: 542px;
+  top: 522px;
   width: 450px;
   height: 75px;
   z-index: 2;
@@ -79,7 +80,7 @@ module.exports = {
 }
 .so-input-2 {
   left: 99px;
-  top: 636px;
+  top: 616px;
   width: 450px;
   height: 75px;
   z-index: 1;
@@ -90,7 +91,7 @@ module.exports = {
 }
 .so-input-3 {
   left: 99px;
-  top: 730px;
+  top: 710px;
   width: 450px;
   height: 75px;
   z-index: 0;
@@ -109,11 +110,11 @@ input.so {
   left: 0px;
   right: 0px;
   width: 530px;
-  top: 460px;
+  top: 440px;
   margin: 0 auto;
   color: white;
   font-size: 36px;
   line-height: 80px;
-  text-align: center;
+  // text-align: center;
 }
 </style>
