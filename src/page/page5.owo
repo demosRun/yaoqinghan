@@ -1,14 +1,18 @@
 <template lang="pug">
 .page5
   img.so.so-0(src="@|290.png|")
-  img.so.so-1(src="@|294.png|")
-  img.so.so-2(src="@|293.png|")
+  //- img.so.so-1(src="@|294.png|")
+  //- img.so.so-2(src="@|293.png|")
   img.so.so-box(src="@|158.png|")
   //- 输入框
-  input.so.so-input-0(type="text")
-  input.so.so-input-1(type="text")
-  input.so.so-input-2(type="text")
-  input.so.so-input-3(type="text")
+  //- input.so.so-input-0(type="text")
+  //- input.so.so-input-1(type="text")
+  //- input.so.so-input-2(type="text")
+  //- input.so.so-input-3(type="text")
+  .text
+    p 联系人：赵老师
+    p 电话 65935897 15313522896
+    p 邮箱 beijing@people.cn
 
 </template>
 <script>
@@ -99,5 +103,17 @@ input.so {
   background-color: transparent;
   padding-left: 100px;
   color: white;
+}
+.text {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  width: 530px;
+  top: 460px;
+  margin: 0 auto;
+  color: white;
+  font-size: 36px;
+  line-height: 80px;
+  text-align: center;
 }
 </style>

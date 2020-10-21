@@ -286,6 +286,19 @@ li {
   padding-left: 100px;
   color: white;
 }
+
+.page5 .text {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  width: 530px;
+  top: 460px;
+  margin: 0 auto;
+  color: white;
+  font-size: 36px;
+  line-height: 80px;
+  text-align: center;
+}
 /* 页面切换动画 */
 .o-page-moveToLeft {
 	-webkit-animation: moveToLeft .6s ease both;
